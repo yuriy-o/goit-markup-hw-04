@@ -335,7 +335,7 @@ img {
 
 .features-item-icon:hover .features-icon {
   --color1: #ffffff;
-  --color2: #ffffff;
+  --color2: #000000;
 }
 
 /* #endregion */
