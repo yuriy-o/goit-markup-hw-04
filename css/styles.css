@@ -12,6 +12,8 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --logo-black-color: #000000;
   --button-hover-color: #188ce8;
+  --icon-color:#AFB1B8;
+  --icon-color-hover: #ffffff;
 
   /* background colors */
   --main-background-color: #ffffff;
@@ -171,7 +173,8 @@ img {
 .footer-address:hover,
 .footer-address:focus,
 .footer-link:hover,
-.footer-link:focus {
+.footer-link:focus,
+.header-items > .icon:hover {
   color: var(--accent-color);
 }
 
@@ -194,6 +197,7 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-left: 10px;
 
   font-weight: 500;
   line-height: 1.14;
@@ -201,6 +205,17 @@ img {
   text-decoration: none;
 
   color: var(--main-text-color);
+}
+.header-items {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  fill: var(--main-text-color);
+}
+.header-items > .icon:hover {
+  fill: var(--accent-color);
 }
 
 /*#endregion*/
@@ -307,6 +322,19 @@ img {
   line-height: 1.71;
 }
 
+.features-item-icon {
+  background-color: var(--secondary-background-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  border-radius: 4px;
+}
+
+/* .features-item-icon:hover {
+  background-color: var(--accent-color);
+} */
+
 /* #endregion */
 /*#region section hobbies */
 
@@ -345,8 +373,7 @@ img {
 }
 
 .team-items {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .team-third-title {
@@ -364,6 +391,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .team-item {
@@ -377,9 +405,54 @@ img {
 .team-item:last-child {
   margin-right: 0;
 }
-.team-img{
+.team-img {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.social-link-item {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%; 
+  
+}
+.social-link-item:last-child {
+  margin-right: 0;
+}
+.social-link-item .icon{
+fill: var(--icon-color);
+}
+
+.social-link-item .icon:hover{
+  fill: var(--icon-color-hover);
+}
+
+.social-link-item:hover {
+    background-color: #188ce8;
+    
+}
+
+
+
+.social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+
+  /* Для футера */
+  /* color: #fff;
+  background-color: rgba(255, 255, 255, 0.1); */
 }
 
 /* #endregion */
