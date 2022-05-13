@@ -329,9 +329,14 @@ img {
   border-radius: 4px;
 }
 
-/* .features-item-icon:hover {
+.features-item-icon:hover {
   background-color: var(--accent-color);
-} */
+}
+
+.features-item-icon:hover .features-icon {
+  --color1: #ffffff;
+  --color2: #ffffff;
+}
 
 /* #endregion */
 /*#region section hobbies */
