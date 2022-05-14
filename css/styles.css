@@ -263,6 +263,8 @@ img {
   border: none;
   padding: 10px 32px;
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 .hero-button:hover,
